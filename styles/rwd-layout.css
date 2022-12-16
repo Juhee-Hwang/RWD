@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -6,42 +6,41 @@ body {
   margin: 0;
 }
 
-
-.group1 .box{
-  background-color: #FFD700
+.group1 .box {
+  background: gold;
 }
-.group2 .box{
-  background-color: #FE5000
+.group2 .box {
+  background: pink;
 }
-.group3 .box{
-  background-color:#EF3340
+.group3 .box {
+  background: lightgreen;
 }
-.group4 .box{
-  background-color: #E10098
+.group4 .box {
+  background: skyblue;
 }
-.group5 .box{
-  background-color: #BB29BB
+.group5 .box {
+  background: salmon;
 }
-.group6 .box{
-  background-color: #440099
+.group6 .box {
+  background: violet;
 }
-.group7 .box{
-  background-color: #F2F0A1
+.group7 .box {
+  background: aquamarine;
 }
-.group8 .box{
-  background-color: #FCAEBB
+.group8 .box {
+  background: lightseagreen;
 }
-.group9 .box{
-  background-color: #BF9BDE
+.group9 .box {
+  background: MediumPurple;
 }
 .group10 .box {
-  background-color: #74D1EA
+  background: MidnightBlue;
 }
 .group11 .box {
-  background-color: #FFAA4D
+  background: Olive;
 }
 .group12 .box {
-  background-color: #FF7276
+  background: SandyBrown;
 }
 
 /* 모든 디바이스 */
