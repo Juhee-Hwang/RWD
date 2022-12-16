@@ -1,4 +1,3 @@
-
 *{
   box-sizing: border-box;
 }
@@ -8,70 +7,86 @@ body {
 }
 
 
-.group1 {
+.group1 .box{
   background-color: #FFD700
 }
-.group2 {
+.group2 .box{
   background-color: #FE5000
 }
-.group3 {
+.group3 .box{
   background-color:#EF3340
 }
-.group4 {
+.group4 .box{
   background-color: #E10098
 }
-.group5 {
+.group5 .box{
   background-color: #BB29BB
 }
-.group6 {
+.group6 .box{
   background-color: #440099
 }
-.group7 {
+.group7 .box{
   background-color: #F2F0A1
 }
-.group8 {
+.group8 .box{
   background-color: #FCAEBB
 }
-.group9 {
+.group9 .box{
   background-color: #BF9BDE
 }
-.group10 {
+.group10 .box {
   background-color: #74D1EA
 }
-.group11 {
+.group11 .box {
   background-color: #FFAA4D
 }
-.group12 {
+.group12 .box {
   background-color: #FF7276
 }
 
 /* 모든 디바이스 */
 .container {
-  background-color: silver;
+  background: silver;
   border: 1px solid red;
   display: flex;
   flex-flow: row wrap;
-  padding: 12px 12px;
-  /* row-gap: 24px; */
+  padding: 12px;
 }
 
-div[class*="group"]{
+div[class*="group"] {
   width: 100%;
-  height: 50px;
-  margin: 12px 0;
-  padding: 0 12px;
+  margin: 0;
 }
 
+.box {
+  margin: 12px;
+  height: 150px;
+}
+
+/* 768px 이상일 때 */
 @media (min-width: 768px) {
-  div[class*="group"]{
+  div[class*="group"] {
     width: 50%;
-    height: 100px;
+  }
+
+  div.group1,
+  div.group4 {
+    width: 100%;
   }
 }
 
+/* 1280px 이상일 때 */
 @media (min-width: 1280px) {
-  div[class*="group"]{
+  div[class*="group"] {
     width: 25%;
-    height: 150px;
+  }
+
+  div.group2 {
+    order: 1;
+  }
+
+  div.group1,
+  div.group12 {
+    width: 75%;
   }
 }
